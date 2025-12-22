@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LENTER Motors | Models</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Oswald:wght@500&display=swap" rel="stylesheet">
+</head>
+<body class="models-page">
+
+    <nav class="navbar">
+    <div class="logo">LENTER</div>
+    
+    <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+
+    <ul class="nav-links" id="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="models.html">Models</a></li>
+        <li><a href="newsfeed.html">Newsfeed</a></li>
+        <li><a href="reach-us.html">Reach Us</a></li>
+        <li><a href="beyond.html">Beyond</a></li>
+    </ul>
+</nav>
+
+    <main class="models-container">
+        <div class="carousel-wrapper">
+            <button class="nav-btn prev" onclick="changeModelSlide(-1)">&#10094;</button>
+            
+            <div class="carousel-viewport">
+                <div class="model-slide active">
+                    <img src="dirtroad.png" alt="LENTER Bakkie Front">
+                    <div class="model-info">
+                        <h2>The LENTER Atlas S10 (Utility Bakkie)</h2>
+                        <p>Dominant torque meets refined comfort. Engineered for the toughest terrains.</p>
+                    </div>
+                </div>
+                <div class="model-slide">
+                    <img src="interior.png" alt="LENTER Bakkie Interior">
+                    <div class="model-info">
+                        <h2>Interior Mastery</h2>
+                        <p>Custom seating and a 15-inch tactical display for total control.</p>
+                    </div>
+                </div>
+                <div class="model-slide">
+                    <img src="rear end.png" alt="LENTER Bakkie Interior">
+                    <div class="model-info">
+                        <h2>Bigger Loadbed</h2>
+                        <p>Carry your world.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--<button class="nav-btn next" onclick="changeModelSlide(1)">&#10095;</button>-->
+            <button class="nav-btn prev" onclick="changeModelSlide(-1)">&#10094;</button>
+            <button class="nav-btn next" onclick="changeModelSlide(1)">&#10095;</button>
+        </div>
+
+        <nav class="model-selector">
+            <a href="#" class="disabled">SUV</a>
+            <a href="#" class="disabled">Sedan</a>
+            <a href="#" class="active-category">Utility Bakkie</a>
+            <a href="#" class="disabled">Coupe</a>
+            <a href="#" class="disabled">Sport</a>
+            <a href="#" class="disabled">Hatchback</a>
+        </nav>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
