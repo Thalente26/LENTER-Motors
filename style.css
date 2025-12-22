@@ -899,4 +899,10 @@ td:first-child {
 .download-link:hover {
     color: #fff;
     border-color: #fff;
+
+}
+
+.email {
+color: #00ffcc;
+font-weight: 300;
 }
